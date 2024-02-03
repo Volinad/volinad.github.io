@@ -1,3 +1,5 @@
+# Personal website built with [Solid.js](https://www.solidjs.com/) and [Tailwind](https://tailwindcss.com/)
+
 ## Usage
 
 Those templates dependencies are maintained via [pnpm](https://pnpm.io) via `pnpm up -Lri`.
