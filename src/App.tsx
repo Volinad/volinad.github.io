@@ -25,6 +25,11 @@ const App = () => {
         });
     });
 
+    var age = new Date().getFullYear() - 1986;
+    var firstEmploymentDate = new Date(2009, 8, 1);
+    var currentDate = new Date();
+    var yearsOfExperience = currentDate.getFullYear() - firstEmploymentDate.getFullYear();
+
     return (
         <div class="App">
             {init() && (
@@ -33,10 +38,18 @@ const App = () => {
                     options={particlesConfig}
                 />
             )}
-            <div class={`${styles.content} container mx-auto px-4 flex flex-col items-center`}>
-                <h1 class="text-3xl font-bold px-4">
+            <div class={`${styles.content} container mx-auto px-4 flex flex-col items-center max-w-7xl`}>
+                <nav class="font-bold py-4 code text-xs bg-white w-full text-center border border-slate-200">
                     Hello world!
-                </h1>
+                </nav>
+                <figure class="flex my-8 bg-white w-full px-4 py-2 border border-slate-200">
+                    <img class="w-32 h-32 rounded-full ml-auto mr-4 border-4 border-slate-300" src="/src/assets/me.jpg" alt="Oleg Dolotov" />
+                    <figcaption class="text-lg mr-auto ml-4 py-4">
+                        <h1 class="text-3xl">Oleg Dolotov</h1>
+                        <h2 class="mt-4 text-2xl">Fullstack web developer with {yearsOfExperience} years of experience</h2>
+                        <p class="text-sm">{age} years old, digital nomad, currently living in Thailand</p>
+                    </figcaption>
+                </figure>
             </div>
         </div>
     );
