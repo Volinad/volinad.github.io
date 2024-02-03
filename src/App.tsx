@@ -1,18 +1,15 @@
-import { loadFull } from "tsparticles";
-import configs from "@tsparticles/configs";
 import { createEffect, createSignal } from "solid-js";
+
+import { loadFull } from "tsparticles";
+import { Engine } from "@tsparticles/engine";
 import Particles from "@tsparticles/solid";
 import { initParticlesEngine } from "@tsparticles/solid/src/index";
-import { Engine } from "@tsparticles/engine";
 
-import logo from './logo.svg';
 import styles from './App.module.css';
-import ParticlesComponent from './ParticlesComponent';
 import particlesConfig from './particles-config.json';
 
-
 const App = () => {
-  const [init, setInit] = createSignal(false);
+    const [init, setInit] = createSignal(false);
 
     createEffect(() => {
         if (init()) {
@@ -31,11 +28,16 @@ const App = () => {
     return (
         <div class="App">
             {init() && (
-                <Particles
+                <Particles className={styles.particles}
                     id="tsparticles"
                     options={particlesConfig}
                 />
             )}
+            <div class={`${styles.content} container mx-auto px-4 flex flex-col items-center`}>
+                <h1 class="text-3xl font-bold px-4">
+                    Hello world!
+                </h1>
+            </div>
         </div>
     );
 };
