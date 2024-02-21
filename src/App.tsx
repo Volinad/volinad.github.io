@@ -26,7 +26,11 @@ const App = () => {
         });
     });
 
-    var age = new Date().getFullYear() - 1986;
+    var currentYear = new Date().getFullYear();
+    // if current month is less than August, then subtract 1 from current year
+    if (new Date().getMonth() < 8) currentYear--;
+
+    var age = currentYear - 1986;
     var firstEmploymentDate = new Date(2009, 8, 1);
     var currentDate = new Date();
     var yearsOfExperience = currentDate.getFullYear() - firstEmploymentDate.getFullYear();
@@ -55,7 +59,11 @@ const App = () => {
             </div>
 
             <div class={`${styles.content} container mx-auto px-4 flex flex-col items-center max-w-7xl`}>
-                <h3><a href="https://docs.google.com/document/d/1mVbuZVcYO2aDbF2FcHohd8dmozP17fEKvVGJ9ykWtaA/export?format=pdf" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded m-4">Download CV</a></h3>
+                <h3>
+                    <a href="https://docs.google.com/document/d/1mVbuZVcYO2aDbF2FcHohd8dmozP17fEKvVGJ9ykWtaA/export?format=pdf" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded m-4">
+                        Download CV
+                    </a>
+                </h3>
             </div>
 
             <div class="container mx-auto px-4 flex flex-col items-center max-w-7xl">
