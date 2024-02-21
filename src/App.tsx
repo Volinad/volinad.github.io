@@ -39,6 +39,7 @@ const App = () => {
                     options={particlesConfig}
                 />
             )}
+
             <div class={`${styles.content} container mx-auto px-4 flex flex-col items-center max-w-7xl`}>
                 <header class="font-bold py-4 text-xs bg-white w-full text-center border border-slate-200">
                     <code>{`> Hello world! _`}</code>
@@ -51,6 +52,99 @@ const App = () => {
                         <p class="text-sm">{age} years old, digital nomad, currently living in Thailand</p>
                     </figcaption>
                 </figure>
+            </div>
+
+            <div class={`${styles.content} container mx-auto px-4 flex flex-col items-center max-w-7xl`}>
+                <h3><a href="https://docs.google.com/document/d/1mVbuZVcYO2aDbF2FcHohd8dmozP17fEKvVGJ9ykWtaA/export?format=pdf" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded m-4">Download CV</a></h3>
+            </div>
+
+            <div class="container mx-auto px-4 flex flex-col items-center max-w-7xl">
+                <h2 class="text-2xl">Social networks:</h2>
+                <ul class="text-xl">
+                    <li><a href="https://www.linkedin.com/in/oleg-dolotov-96a053aa">LinkedIn</a></li>
+                    <li><a href="https://github.com/osharper">GitHub</a></li>
+                    <li><a href="https://www.stackoverflow.com/users/1048482/osharper">StackOverflow</a></li>
+                    <li><a href="https://www.facebook.com/osharper">Facebook</a></li>
+                    <li><a href="https://t.me/osharper">Telegram</a></li>
+                    <li><a href="https://soundcloud.com/osharper">SoundCloud</a></li>
+                </ul>
+            </div>
+
+            <div class="container mx-auto px-4 flex flex-col items-center max-w-7xl">
+                <p>Hello! Welcome to my GitHub page. I use it for various experiments with modern web technologies. You can find some of the results in Experiments section if you're curious. This page is made with Solid.js with tsParticles on the background</p>
+            </div>
+
+            <div class="container mx-auto px-4 flex flex-col items-center max-w-7xl">
+                <h2 class="text-3xl">About me</h2>
+                <p>
+                    I have more than a decade of experience in developing web applications using various technologies and frameworks, such as Node.js, React, Angular, .NET, MongoDB and cloud service providers: AWS, GCP and Azure. My last projects were majorly cloud-based B2B web applications with focus on automation, robustness and scalability, but I would love to get involved in some B2C projects with high scalability requirements. My core competencies include full-stack development, data-driven reporting, API integration and development, CI/CD setup and data optimizations. My mission is to create innovative and user-friendly solutions that help people and organizations be more productive and solve real-world problems. I'm not limiting myself to some set of languages (my main ones are C#, JS/TS and Python nowadays) and always keen to learn something new, currently I'm exploring Unity3D, Go, Rust (with Bevy) and RDF/SPARQL.
+                </p>
+                <p>
+                    For six years, I worked as a Senior Web Application Developer at Showd.me, a rapidly growing employee training and certification platform. I contributed to the transformation of the application into a robust and scalable solution capable of managing a diverse array of tasks, such as data-driven reporting using raw ElasticSearch event data, PDF generation and bundling in AWS Lambda tasks, and interacting with various EMS systems featuring complex APIs. I worked with a dedicated development team and coordinated the server-side, client-side, and storage areas of the project. I also performed code reviews and ensured the quality and performance of the code.
+                </p>
+                <p>
+                    I have a strong understanding of the principles of software development, including SOLID, DRY, KISS, and YAGNI. I am experienced in using various design patterns and architectural styles, such as MVC, MVVM, and CQRS. I am also familiar with various development methodologies, such as Agile, Scrum, and Kanban. I am a strong advocate of test-driven development and continuous integration, and I have experience with various testing frameworks, such as Jest, Mocha, and Chai. I am also familiar with various CI/CD tools, such as Jenkins, Travis CI, and GitHub Actions.
+                </p>
+            </div>
+
+            <div class="container mx-auto px-4 flex flex-col items-center max-w-7xl">
+                <h2 class="text-3xl">Major tools</h2>
+
+                <h3 class="text-2xl">Server side:</h3>
+                <ul class="text-xl">
+                    <li>Node.js</li>
+                    <li>Express</li>
+                    <li>ASP.NET Core</li>
+                    <li>Python</li>
+                    <li>Go</li>
+                    <li>Rust</li>
+                </ul>
+
+                <h3 class="text-2xl">Client side:</h3>
+                <ul class="text-xl">
+                    <li>React</li>
+                    <li>Angular</li>
+                    <li>Solid.js</li>
+                    <li>Vue</li>
+                    <li>Unity3D</li>
+                </ul>
+
+                <h3 class="text-2xl">Databases:</h3>
+                <ul class="text-xl">
+                    <li>MongoDB</li>
+                    <li>PostgreSQL</li>
+                    <li>MySQL</li>
+                    <li>SQLite</li>
+                    <li>Redis</li>
+                </ul>
+
+                <h3 class="text-2xl">Infrastructure:</h3>
+                <ul class="text-xl">
+                    <li>CI/CD</li>
+                    <li>AWS</li>
+                    <li>GCP</li>
+                    <li>Docker</li>
+                    <li>Kubernetes</li>
+                    <li>Serverless</li>
+                </ul>
+            </div>
+
+            <div class="container mx-auto px-4 flex flex-col items-center max-w-7xl">
+                <h2 class="text-3xl">Experiments</h2>
+                <p>
+                    Here are some of the experiments I've done recently. I'm trying to keep this list up to date, but it's not always possible, so you can check my GitHub repositories for the latest updates.
+                </p>
+                <ul class="text-xl">
+                    <li><a href="https://osharper.github.io/solid-tsparticles/">Solid.js + tsParticles</a></li>
+                    <li><a href="https://osharper.github.io/solid-tsparticles/">Solid.js + tsParticles</a></li>
+                    <li><a href="https://osharper.github.io/solid-tsparticles/">Solid.js + tsParticles</a></li>
+                    <li><a href="https://osharper.github.io/solid-tsparticles/">Solid.js + tsParticles</a></li>
+                </ul>
+            </div>
+
+            <div class="container mx-auto px-4 flex flex-col items-center max-w-7xl">
+                <h2 class="text-3xl">Contact me</h2>
+                <p>You can contact me via email: <a href="mailto:odolotov@gmail.com">odolotov@gmail.com</a></p>
             </div>
         </div>
     );
