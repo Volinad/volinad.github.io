@@ -66,7 +66,7 @@ const App = () => {
                 </h3>
             </div>
 
-            <div class="container mx-auto px-4 flex flex-col items-center max-w-7xl">
+            <div class={`${styles.content} container mx-auto px-4 flex flex-col items-center max-w-7xl`}>
                 <h2 class="text-2xl">Social networks:</h2>
                 <ul class="text-xl">
                     <li><a href="https://www.linkedin.com/in/oleg-dolotov-96a053aa">LinkedIn</a></li>
@@ -78,7 +78,7 @@ const App = () => {
                 </ul>
             </div>
 
-            <div class="container mx-auto px-4 flex flex-col items-center max-w-7xl">
+            <div class={`${styles.content} container mx-auto px-4 flex flex-col items-center max-w-7xl`}>
                 <p>Hello! Welcome to my GitHub page. I use it for various experiments with modern web technologies. You can find some of the results in Experiments section if you're curious. This page is made with Solid.js with tsParticles on the background</p>
             </div>
 
@@ -95,7 +95,7 @@ const App = () => {
                 </p>
             </div>
 
-            <div class="container mx-auto px-4 flex flex-col items-center max-w-7xl">
+            <div class={`${styles.content} container mx-auto px-4 flex flex-col items-center max-w-7xl`}>
                 <h2 class="text-3xl">Major tools</h2>
 
                 <h3 class="text-2xl">Server side:</h3>
@@ -137,20 +137,20 @@ const App = () => {
                 </ul>
             </div>
 
-            <div class="container mx-auto px-4 flex flex-col items-center max-w-7xl">
+            <div class={`${styles.content} container mx-auto px-4 flex flex-col items-center max-w-7xl`}>
                 <h2 class="text-3xl">Experiments</h2>
                 <p>
                     Here are some of the experiments I've done recently. I'm trying to keep this list up to date, but it's not always possible, so you can check my GitHub repositories for the latest updates.
                 </p>
                 <ul class="text-xl">
-                    <li><a href="https://osharper.github.io/solid-tsparticles/">Solid.js + tsParticles</a></li>
-                    <li><a href="https://osharper.github.io/solid-tsparticles/">Solid.js + tsParticles</a></li>
-                    <li><a href="https://osharper.github.io/solid-tsparticles/">Solid.js + tsParticles</a></li>
-                    <li><a href="https://osharper.github.io/solid-tsparticles/">Solid.js + tsParticles</a></li>
+                    <li><a target="_blank" href="https://osharper.github.io/solid-tsparticles/">This website. Solid.js + tsParticles</a></li>
+                    <li><a target="_blank" href="https://t.me/addstickers/magicreatures">My son have made a set of Telegram stickers. You can add them using this link</a></li>
+                    <li><a target="_blank" href="https://osharper.github.io/solid-tsparticles/">Solid.js + tsParticles</a></li>
+                    <li><a target="_blank" href="https://osharper.github.io/solid-tsparticles/">Solid.js + tsParticles</a></li>
                 </ul>
             </div>
 
-            <div class="container mx-auto px-4 flex flex-col items-center max-w-7xl">
+            <div class={`${styles.content} container mx-auto px-4 flex flex-col items-center max-w-7xl`}>
                 <h2 class="text-3xl">Contact me</h2>
                 <p>You can contact me via email: <a href="mailto:odolotov@gmail.com">odolotov@gmail.com</a></p>
             </div>
