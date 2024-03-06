@@ -35,6 +35,8 @@ const App = () => {
     var firstEmploymentDate = new Date(2009, 8, 1);
     var yearsOfExperience = currentDate.getFullYear() - firstEmploymentDate.getFullYear();
 
+    var containerClasses = 'container mx-auto px-4 my-8 flex flex-col items-center max-w-7xl border border-slate-200 backdrop-blur-sm';
+
     return (
         <div class="App">
             {init() && (
@@ -53,22 +55,23 @@ const App = () => {
                     <figcaption class="text-lg mr-auto ml-4 py-4">
                         <h1 class="text-3xl">Oleg Dolotov</h1>
                         <h2 class="mt-4 text-2xl">Fullstack web developer with {yearsOfExperience} years of experience</h2>
-                        <p class="text-sm">{age}  years old, digital nomad, currently living in Thailand</p>
+                        <p class="text-sm">{age} years old, digital nomad, currently living in Thailand</p>
                     </figcaption>
                 </figure>
             </div>
 
-            <div class={`${styles.content} container mx-auto px-4 flex flex-col items-center max-w-7xl`}>
-                <h3>
-                    <a href="https://docs.google.com/document/d/1mVbuZVcYO2aDbF2FcHohd8dmozP17fEKvVGJ9ykWtaA/export?format=pdf" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded m-4">
+            <div class={`${styles.content} container mx-auto my-8 px-4 flex flex-col items-center max-w-7xl h-14`}>
+                <h3 class="h-12">
+                    <a href="https://docs.google.com/document/d/1mVbuZVcYO2aDbF2FcHohd8dmozP17fEKvVGJ9ykWtaA/export?format=pdf"
+                       class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-3 rounded m-4">
                         Download CV
                     </a>
                 </h3>
             </div>
 
-            <div class={`${styles.content} container mx-auto px-4 flex flex-col items-center max-w-7xl`}>
+            <div class={`${styles.content} ${containerClasses}`}>
                 <h2 class="text-2xl">Social networks:</h2>
-                <ul class="text-xl">
+                <ul class="text-xl list-image-none">
                     <li><a href="https://www.linkedin.com/in/oleg-dolotov-96a053aa">LinkedIn</a></li>
                     <li><a href="https://github.com/osharper">GitHub</a></li>
                     <li><a href="https://www.stackoverflow.com/users/1048482/osharper">StackOverflow</a></li>
@@ -78,11 +81,11 @@ const App = () => {
                 </ul>
             </div>
 
-            <div class={`${styles.content} container mx-auto px-4 flex flex-col items-center max-w-7xl`}>
+            <div class={`${styles.content} ${containerClasses}`}>
                 <p>Hello! Welcome to my GitHub page. I use it for various experiments with modern web technologies. You can find some of the results in Experiments section if you're curious. This page is made with Solid.js with tsParticles on the background</p>
             </div>
 
-            <div class="container mx-auto px-4 flex flex-col items-center max-w-7xl">
+            <div class={`${styles.content} ${containerClasses}`}>
                 <h2 class="text-3xl">About me</h2>
                 <p>
                     I have more than a decade of experience in developing web applications using various technologies and frameworks, such as Node.js, React, Angular, .NET, MongoDB and cloud service providers: AWS, GCP and Azure. My last projects were majorly cloud-based B2B web applications with focus on automation, robustness and scalability, but I would love to get involved in some B2C projects with high scalability requirements. My core competencies include full-stack development, data-driven reporting, API integration and development, CI/CD setup and data optimizations. My mission is to create innovative and user-friendly solutions that help people and organizations be more productive and solve real-world problems. I'm not limiting myself to some set of languages (my main ones are C#, JS/TS and Python nowadays) and always keen to learn something new, currently I'm exploring Unity3D, Go, Rust (with Bevy) and RDF/SPARQL.
@@ -95,21 +98,20 @@ const App = () => {
                 </p>
             </div>
 
-            <div class={`${styles.content} container mx-auto px-4 flex flex-col items-center max-w-7xl`}>
-                <h2 class="text-3xl">Major tools</h2>
+            <div class={`${styles.content} ${containerClasses}`}>
+                <h2 class="text-3xl my-8">Major tools</h2>
 
-                <h3 class="text-2xl">Server side:</h3>
-                <ul class="text-xl">
-                    <li>Node.js</li>
-                    <li>Express</li>
+                <h3 class="text-2xl ">Server side:</h3>
+                <ul class="text-xl ">
+                    <li>Node.jsExpress</li>
                     <li>ASP.NET Core</li>
                     <li>Python</li>
                     <li>Go</li>
                     <li>Rust</li>
                 </ul>
 
-                <h3 class="text-2xl">Client side:</h3>
-                <ul class="text-xl">
+                <h3 class="text-2xl ">Client side:</h3>
+                <ul class="text-xl ">
                     <li>React</li>
                     <li>Angular</li>
                     <li>Solid.js</li>
@@ -118,7 +120,7 @@ const App = () => {
                 </ul>
 
                 <h3 class="text-2xl">Databases:</h3>
-                <ul class="text-xl">
+                <ul class="text-xl ">
                     <li>MongoDB</li>
                     <li>PostgreSQL</li>
                     <li>MySQL</li>
@@ -127,7 +129,7 @@ const App = () => {
                 </ul>
 
                 <h3 class="text-2xl">Infrastructure:</h3>
-                <ul class="text-xl">
+                <ul class="text-xl ">
                     <li>CI/CD</li>
                     <li>AWS</li>
                     <li>GCP</li>
@@ -137,7 +139,7 @@ const App = () => {
                 </ul>
             </div>
 
-            <div class={`${styles.content} container mx-auto px-4 flex flex-col items-center max-w-7xl`}>
+            <div class={`${styles.content} ${containerClasses}`}>
                 <h2 class="text-3xl">Experiments</h2>
                 <p>
                     Here are some of the experiments I've done recently. I'm trying to keep this list up to date, but it's not always possible, so you can check my GitHub repositories for the latest updates.
@@ -150,7 +152,7 @@ const App = () => {
                 </ul>
             </div>
 
-            <div class={`${styles.content} container mx-auto px-4 flex flex-col items-center max-w-7xl`}>
+            <div class={`${styles.content} ${containerClasses}`}>
                 <h2 class="text-3xl">Contact me</h2>
                 <p>You can contact me via email: <a href="mailto:odolotov@gmail.com">odolotov@gmail.com</a></p>
             </div>
