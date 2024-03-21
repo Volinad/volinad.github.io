@@ -1,4 +1,9 @@
 import styles from './App.module.css';
+import FacebookIcon from './svg/FacebookIcon';
+import Telegramicon from './svg/Telegramicon';
+import LinkedinIcon from './svg/linkedin-svgrepo-com.svg'
+import Soundcloudicon from './svg/soundcloudicon';
+import StackoverflowIcon from './svg/stackicon';
 
 const AboutMe = () => {
   const containerClasses = 'container mx-auto px-4 my-8 flex flex-col items-center max-w-7xl';
@@ -9,12 +14,22 @@ const AboutMe = () => {
       <div class={`flex flex-col mb-4 bg-white-600 w-full px-4 py-2 backdrop-blur-sm ${borderClasses}`}>
         <h2 class="text-2xl">Social networks:</h2>
         <ul class="text-xl list-image-none flex">
-          <li><a href="https://www.linkedin.com/in/oleg-dolotov-96a053aa">LinkedIn</a></li>
+          <li><a href="https://www.linkedin.com/in/oleg-dolotov-96a053aa">
+            LinkedinIcon
+          </a></li>
           <li><a href="https://github.com/osharper">GitHub</a></li>
-          <li><a href="https://www.stackoverflow.com/users/1048482/osharper">StackOverflow</a></li>
-          <li><a href="https://www.facebook.com/osharper">Facebook</a></li>
-          <li><a href="https://t.me/osharper">Telegram</a></li>
-          <li><a href="https://soundcloud.com/osharper">SoundCloud</a></li>
+          <li><a href="https://www.stackoverflow.com/users/1048482/osharper">
+            <StackoverflowIcon />
+            </a></li>
+          <li><a href="https://www.facebook.com/osharper">
+            <FacebookIcon />
+          </a></li>
+          <li><a href="https://t.me/osharper">
+            <Telegramicon />
+          </a></li>
+          <li><a href="https://soundcloud.com/osharper">
+            <Soundcloudicon />
+          </a></li>
         </ul>
       </div>
 
