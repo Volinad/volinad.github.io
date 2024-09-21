@@ -34,8 +34,6 @@ export const App = () => {
         });
     });
 
-    const borderClasses = 'border border-slate-400';
-
     return (
         <div class="App">
             {init() && (
@@ -45,11 +43,8 @@ export const App = () => {
             )}
 
             <div class={`${styles.content} container mx-auto px-4 flex flex-col items-center max-w-7xl`}>
-                <header class={`font-bold py-4 text-xs bg-opacity-10 bg-white w-full backdrop-blur-sm text-center ${borderClasses}`}>
-                    <code>{`SemanticMesh > Grasp the essence`}</code>
-                </header>
-
-                <h1 class="text-4xl py-5 font-bold code">Semantic Mesh</h1>
+                <h1 class="text-4xl pt-5 font-bold code">Semantic Mesh</h1>
+                <h2 class="text-2xl pb-5 code">Grasp the essence</h2>
                 <Image
                     src={graphspace1}
                     alt="Sematic mesh presentation"
