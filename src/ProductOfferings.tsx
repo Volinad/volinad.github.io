@@ -9,7 +9,7 @@ const Experiments = () => {
     <div class={`${styles.content} ${containerClasses}`}>
       <div class={`flex flex-col mb-4 bg-opacity-10 bg-white w-full px-4 py-2 backdrop-blur-sm ${borderClasses}`}>
         <h2 class="text-3xl pt-1 pb-3">Product Offerings</h2>
-        <p>GraphSpace provides flexibility similar to how text exists in both print and digital formats:</p>
+        <p>Semantic Mesh provides flexibility similar to how text exists in both print and digital formats:</p>
 
         <h3 class="text-2xl">Static Visualizations</h3>
         <ul class={`text-xl ${listClasses}`}>

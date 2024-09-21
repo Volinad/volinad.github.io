@@ -17,8 +17,8 @@ const ContactMe = () => {
       <h2 class="text-3xl pt-1 pb-3">Conclusion</h2>
 
         <p>
-          GraphSpace sets a new standard in visual communication, unlocking possibilities for deeper understanding, enhanced exchange, and effective utilization of information in the modern world.
-          By transforming how we visualize and interact with data, GraphSpace empowers users to explore complex concepts with ease and clarity.
+          Semantic Mesh sets a new standard in visual communication, unlocking possibilities for deeper understanding, enhanced exchange, and effective utilization of information in the modern world.
+          By transforming how we visualize and interact with data, Semantic Mesh empowers users to explore complex concepts with ease and clarity.
         </p>
       </div>
     </div>
