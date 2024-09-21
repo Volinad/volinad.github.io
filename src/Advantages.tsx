@@ -4,7 +4,6 @@ import graphspace2 from './assets/graphspace2.jpg';
 
 const Experiments = () => {
   const containerClasses = 'container mx-auto px-4 my-8 flex flex-col items-center max-w-7xl';
-  const borderClasses = 'border border-slate-200';
   const listClasses = 'list-disc pl-6 mb-4';
 
   return (
@@ -14,7 +13,7 @@ const Experiments = () => {
           alt="Sematic mesh presentation"
           class="rounded-lg shadow-lg"
       />
-      <div class={`flex flex-col mt-8 mb-4 bg-opacity-10 bg-white w-full px-4 py-2 backdrop-blur-sm ${borderClasses}`}>
+      <div class={`flex flex-col mt-8 mb-4 bg-opacity-10 bg-white w-full px-4 py-2 backdrop-blur-sm`}>
         <h2 class="text-3xl pt-1 pb-3">Advantages</h2>
 
         <h3 class="text-2xl">Enhanced Information Absorption</h3>
